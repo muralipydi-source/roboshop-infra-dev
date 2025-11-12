@@ -7,9 +7,14 @@ variable "environment" {
 }
 
 variable "zone_id" {
-    default = "Z032558618100M4EJX8X4"
+    default = "Z01602722QJVZMCD67LWU"
 }
 
 variable "zone_name" {
-    default = "daws84s.site"
+    default = "muraliitemp.online"
+}
+
+variable "ami_id" {
+    default = "ami-06e5a963b2dadea6f"
+  
 }

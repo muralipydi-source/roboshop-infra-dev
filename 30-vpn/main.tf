@@ -1,10 +1,10 @@
 resource "aws_key_pair" "openvpn" {
   key_name   = "openvpn"
-  public_key = file("C:\\devops\\daws-84s\\openvpn.pub") # for mac use /
+  public_key = file("C:\\devops\\daws-86s\\daws-86s.pub") # for mac use /
 }
 
 resource "aws_instance" "vpn" {
-  ami           = local.ami_id
+  ami           = var.ami_id #local.ami_id
   instance_type = "t3.micro"
   vpc_security_group_ids = [local.vpn_sg_id]
   subnet_id = local.public_subnet_id
