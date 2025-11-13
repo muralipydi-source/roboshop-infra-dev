@@ -19,4 +19,4 @@ variable "components" {
             rule_priority = 10
         }
     }
-}
+} 
