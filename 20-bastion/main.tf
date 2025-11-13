@@ -23,7 +23,7 @@ resource "aws_iam_instance_profile" "ec2_profile" {
 
 resource "aws_instance" "bastion" {
   ami           = var.ami_id #local.ami_id
-  instance_type = "t3.micro"
+  instance_type = "m7i-flex.large"
   vpc_security_group_ids = [local.bastion_sg_id]
   subnet_id = local.public_subnet_id
 
