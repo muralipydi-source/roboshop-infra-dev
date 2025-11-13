@@ -13,3 +13,8 @@ variable "zone_id" {
 variable "zone_name" {
     default = "muraliitemp.online"
 }
+
+variable "ami_id" {
+    default = "ami-09c813fb71547fc4f"
+  
+}
