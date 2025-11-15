@@ -62,8 +62,8 @@ resource "aws_route53_record" "frontend_alb" {
   type    = "A"
 
   alias {
-    name                   = aws_cloudfront_distribution.roboshop.domain_name
-    zone_id                = aws_cloudfront_distribution.roboshop.hosted_zone_id
+    name                   = aws_cloudfront_distribution.roboshop-dev.domain_name
+    zone_id                = aws_cloudfront_distribution.roboshop-dev.hosted_zone_id
     evaluate_target_health = true
   }
 }
