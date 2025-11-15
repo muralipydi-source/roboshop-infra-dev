@@ -1,4 +1,4 @@
-resource "aws_cloudfront_distribution" "roboshop" {
+resource "aws_cloudfront_distribution" "roboshop-dev" {
   origin {
     domain_name = "cdn.${var.zone_name}"
     custom_origin_config  {
